@@ -90,7 +90,7 @@ public enum BibleTextOrganizations implements OnixCodelist, CodeList86 {
             return null;
         }
         for (BibleTextOrganizations e : values()) {
-            if (e.code.equals(code)) {
+            if (e.code.equals(code.toUpperCase())) {
                 return e;
             }
         }

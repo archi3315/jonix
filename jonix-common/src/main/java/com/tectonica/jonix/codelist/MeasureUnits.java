@@ -107,6 +107,6 @@ public enum MeasureUnits implements OnixCodelist, CodeList50 {
         if (code == null || code.isEmpty()) {
             return null;
         }
-        return map().get(code);
+        return map().get(code.toLowerCase());
     }
 }

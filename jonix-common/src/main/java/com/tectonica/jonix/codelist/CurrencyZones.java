@@ -69,7 +69,7 @@ public enum CurrencyZones implements OnixCodelist, CodeList172 {
             return null;
         }
         for (CurrencyZones e : values()) {
-            if (e.code.equals(code)) {
+            if (e.code.equals(code.toUpperCase())) {
                 return e;
             }
         }

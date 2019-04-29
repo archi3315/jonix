@@ -19,6 +19,7 @@
 
 package com.tectonica.jonix.codelist;
 
+import com.sun.deploy.util.StringUtils;
 import com.tectonica.jonix.OnixCodelist;
 
 import java.util.HashMap;
@@ -562,6 +563,6 @@ public enum TextScriptCodes implements OnixCodelist, CodeList121 {
         if (code == null || code.isEmpty()) {
             return null;
         }
-        return map().get(code);
+        return map().get(code.substring(0, 1).toUpperCase() + code.substring(1));
     }
 }

@@ -1248,6 +1248,6 @@ public enum ProductFormDetailsList175 implements OnixCodelist, CodeList175 {
         if (code == null || code.isEmpty()) {
             return null;
         }
-        return map().get(code);
+        return map().get(code.toUpperCase());
     }
 }

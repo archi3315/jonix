@@ -603,6 +603,6 @@ public enum CountryCodes implements OnixCodelist, CodeList91 {
         if (code == null || code.isEmpty()) {
             return null;
         }
-        return map().get(code);
+        return map().get(code.toUpperCase());
     }
 }

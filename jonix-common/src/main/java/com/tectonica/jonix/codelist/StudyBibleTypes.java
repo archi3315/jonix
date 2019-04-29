@@ -137,6 +137,6 @@ public enum StudyBibleTypes implements OnixCodelist, CodeList84 {
         if (code == null || code.isEmpty()) {
             return null;
         }
-        return map().get(code);
+        return map().get(code.toUpperCase());
     }
 }

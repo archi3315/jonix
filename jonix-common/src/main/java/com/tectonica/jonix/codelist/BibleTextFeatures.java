@@ -69,7 +69,7 @@ public enum BibleTextFeatures implements OnixCodelist, CodeList97 {
             return null;
         }
         for (BibleTextFeatures e : values()) {
-            if (e.code.equals(code)) {
+            if (e.code.equals(code.toUpperCase())) {
                 return e;
             }
         }
