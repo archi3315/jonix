@@ -19,7 +19,6 @@
 
 package com.tectonica.jonix.codelist;
 
-import com.sun.deploy.util.StringUtils;
 import com.tectonica.jonix.OnixCodelist;
 
 import java.util.HashMap;
