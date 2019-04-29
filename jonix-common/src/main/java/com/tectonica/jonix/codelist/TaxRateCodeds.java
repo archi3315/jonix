@@ -84,7 +84,7 @@ public enum TaxRateCodeds implements OnixCodelist, CodeList62 {
             return null;
         }
         for (TaxRateCodeds e : values()) {
-            if (e.code.equals(code)) {
+            if (e.code.equals(code.toUpperCase())) {
                 return e;
             }
         }

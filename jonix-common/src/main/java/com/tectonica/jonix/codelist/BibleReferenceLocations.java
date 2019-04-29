@@ -94,7 +94,7 @@ public enum BibleReferenceLocations implements OnixCodelist, CodeList87 {
             return null;
         }
         for (BibleReferenceLocations e : values()) {
-            if (e.code.equals(code)) {
+            if (e.code.equals(code.toUpperCase())) {
                 return e;
             }
         }

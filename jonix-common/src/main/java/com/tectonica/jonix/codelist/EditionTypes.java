@@ -274,6 +274,6 @@ public enum EditionTypes implements OnixCodelist, CodeList21 {
         if (code == null || code.isEmpty()) {
             return null;
         }
-        return map().get(code);
+        return map().get(code.toUpperCase());
     }
 }

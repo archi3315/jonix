@@ -202,6 +202,6 @@ public enum BiblePurposes implements OnixCodelist, CodeList85 {
         if (code == null || code.isEmpty()) {
             return null;
         }
-        return map().get(code);
+        return map().get(code.toUpperCase());
     }
 }

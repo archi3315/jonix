@@ -852,6 +852,6 @@ public enum Regions implements OnixCodelist, CodeList49 {
         if (code == null || code.isEmpty()) {
             return null;
         }
-        return map().get(code);
+        return map().get(code.toUpperCase());
     }
 }

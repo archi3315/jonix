@@ -79,7 +79,7 @@ public enum RightsTypes implements OnixCodelist, CodeList219 {
             return null;
         }
         for (RightsTypes e : values()) {
-            if (e.code.equals(code)) {
+            if (e.code.equals(code.toUpperCase())) {
                 return e;
             }
         }
