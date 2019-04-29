@@ -668,6 +668,6 @@ public enum ProductForms implements OnixCodelist, CodeList7 {
         if (code == null || code.isEmpty()) {
             return null;
         }
-        return map().get(code);
+        return map().get(code.toUpperCase());
     }
 }
